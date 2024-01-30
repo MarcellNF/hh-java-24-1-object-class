@@ -1,17 +1,12 @@
 package de.neuefische;
 
-import de.neuefische.cat.Cat;
-
 public class Main {
     public static void main(String[] args) {
-        Cat mauzi = new Cat(); // Instanziieren einer Klasse Cat
-        mauzi.color = "blue";
-        mauzi.name = "Mauzi";
-        System.out.println(mauzi.color);
-        mauzi.color = "red";
-        System.out.println(mauzi.color);
-        Cat fluffy = new Cat("fluffy", "grey");
-        fluffy.name = "fluffy2";
-        System.out.println(fluffy.name);
+        Cat mauzi = new Cat("mauzi", "green", 7); // Instanziieren einer Klasse Cat
+        System.out.println(mauzi.getName());
+        System.out.println(mauzi.getColor());
+        System.out.println(mauzi);
+        Cat fluffy = new Cat("mauzi", "green", 8);
+        System.out.println(mauzi.getAge() == fluffy.getAge());
     }
 }
